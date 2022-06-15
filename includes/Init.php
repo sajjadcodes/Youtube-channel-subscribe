@@ -18,8 +18,8 @@ final class Init
     {
         
        require_once  plugin_dir_path( __FILE__ ) . 'Base/TextDomainLoader.php';
-       echo  plugin_dir_path( __FILE__ ,2);
-        require_once plugin_dir_path( __FILE__ ) . '\Enqueue.php';
+    //    echo  plugin_dir_path( __FILE__ ,2);
+        require_once plugin_dir_path( __FILE__ ) . 'Base\Enqueue.php';
         
 
     }
