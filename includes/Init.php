@@ -10,6 +10,7 @@ namespace Inc;
 // use Inc\Base\Enqueue;
 use Inc\Base\Enqueue;
 
+
 final class Init
 {
 
@@ -20,6 +21,7 @@ final class Init
        require_once  plugin_dir_path( __FILE__ ) . 'Base/TextDomainLoader.php';
     //    echo  plugin_dir_path( __FILE__ ,2);
         require_once plugin_dir_path( __FILE__ ) . 'Base\Enqueue.php';
+        require_once plugin_dir_path( __FILE__ ) . '\Menu.php';
         
 
     }
@@ -28,6 +30,7 @@ final class Init
         
         return [
             Base\Enqueue::class,
+            Base\Menu::class,
             // Base\TextDomainLoader::class,
             
         ];
