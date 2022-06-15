@@ -1,0 +1,17 @@
+{
+    "name": "sakra/starter-plugin",
+    "description": "A WordPress Plugin developement starter. Which helps to build plugin instead of reinventing the basic structure.",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "sajjadcodes",
+            "email": "sakraan01@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Inc\\":"./includes"}
+    }
+}

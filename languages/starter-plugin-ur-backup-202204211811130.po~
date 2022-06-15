@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Starter Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-19 16:16+0000\n"
+"PO-Revision-Date: 2022-04-21 18:09+0000\n"
+"Last-Translator: \n"
+"Language-Team: Urdu\n"
+"Language: ur\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.1; wp-5.9.3\n"
+"X-Domain: starter-plugin"
+
+#. Description of the plugin
+msgid ""
+"A WordPress Plugin developement starter. Which helps to build plugin instead "
+"of reinventing the basic structure."
+msgstr ""
+"ایک ورڈپریس پلگ ان ڈویلپمنٹ اسٹارٹر۔ جو بنیادی ڈھانچے کو دوبارہ ایجاد کرنے "
+"کے بجائے پلگ ان بنانے میں مدد کرتا ہے۔"
+
+#. URI of the plugin
+msgid "https://example.com/plugins/the-basics/"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://sajjadcodes.com/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Sajad Hussain"
+msgstr ""
+
+#. Name of the plugin
+msgid "Starter Plugin"
+msgstr ""
