@@ -40,6 +40,40 @@ class Menu
     public function youtube_channel_subscribe_setting_page_html() {
 
         echo "Youtube channel subscribe settings";
+        if(!current_user_can('manage_options')){
+
+            return;
+        }
+        ?>
+        <div class="wrap">
+            <h1><?php echo esc_html(get_admin_page_title());?></h1>
+            <?php settings_errors(); ?>
+            <?php
+            if( isset( $_GET[ 'tab' ] ) ) {
+                    $this->active_tab = esc_attr( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'setting-options';
+                
+                }
+            ?>
+            <nav class="nav-tab-wrapper wp-clearfix" aria-label="my progress bar setting menu">
+                <a href="?page=youtube-channel-subscribe&tab=setting-options" class="nav-tab <?php echo $this->active_tab == 'setting-options' ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'Options','youtube-channel-subscribe');?></a>
+                <a href="?page=youtube-channel-subscribe&tab=shortcode" class="nav-tab <?php echo $this->active_tab == 'shortcode' ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'Shortcode','youtube-channel-subscribe');?></a>
+                <a href="?page=youtube-channel-subscribe&tab=about" class="nav-tab <?php echo $this->active_tab == 'about' ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'About','youtube-channel-subscribe');?></a>
+            </nav>
+            <form method="post" action="options.php">
+                
+                <?php
+                if($active_tab == 'about'){
+                        echo "This is about us page";
+                } 
+                else{
+                    // settings_fields(  ); 
+                    // do_settings_sections( );
+                    submit_button('Save Changes');
+                }
+                    ?>
+            </form>
+        </div>
+    <?php
     }
     function my_progress_bar_setting_page_html() {
 
